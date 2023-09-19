@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="git.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Build Bank</title>
+</head>
+<body>
+    <h1>Bienvenido al sistema bancario</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <h5 class="card-header">Deposito</h5>
+                    <div class="card-body">
+                        <span id="depositoActual">0</span>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <h5 class="card-header">Retiro</h5>
+
+                    <div class="card-body">
+                        <span id="retiroActual">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <h5 class="card-header">Balance</h5>
+                    <div class="card-body">
+                        <span id="balanceActual">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-5">
+                <div class="card w-90">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Deposito
+                        </h5>
+                        <input id="depositoInput" class="form-control" type="text">
+
+                        <button id="calcularDeposito" type="button" class="btn btn-success mt-4">Calcular</button>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="card w-90">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Retiro
+                        </h5>
+                        <input id="retiroInput" class="form-control" type="text">
+
+                        <button id="calcularRetiro" type="button" class="btn btn-success mt-4">Calcular</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="git.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
